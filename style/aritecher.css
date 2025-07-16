@@ -27,20 +27,33 @@
 .background-color{
     background-color: #FFF4E7;
 }
-
-
+.primary-btn{
+    font-size: 18px;
+    padding: 17px 25px;
+    color: white;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+}
 
 
 
 /* Header Section */
 
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+}
+
 /* Navbar Section  */
+
 .navbar{
   justify-content: space-between;
 }
 ul li{
     list-style: none;
-    margin-right: 30px;
+    margin-right: 2rem;
 }
 ul a{
     text-decoration: none;
@@ -50,3 +63,25 @@ ul a{
     font-weight: bold;
 }
 /* Banner Section */
+
+.text-content{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-teitel{
+    font-size: 4rem;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* Responcive Quiery */
+@media screen and (max-width:576px) {
+    .navbar, .list-item{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
