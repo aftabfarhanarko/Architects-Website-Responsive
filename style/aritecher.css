@@ -1,33 +1,40 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /* Share Style All ELement */
-.dark-2{
+
+main>section {
+    margin-top: 130px;
+}
+
+.dark-2 {
     color: #424242;
 }
 
-.all-p-tag{
+.all-p-tag {
     color: #727272;
 }
-.all-teitel-color{
+
+.all-teitel-color {
     color: #131313;
 }
-.disply-flex{
+
+.disply-flex {
     display: flex;
 }
 
-.background-color{
+.background-color {
     background-color: #FFF4E7;
 }
-.primary-btn{
+
+.primary-btn {
     font-size: 18px;
     padding: 17px 25px;
     color: white;
@@ -36,11 +43,16 @@
     border-radius: 8px;
 }
 
+.max-width {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 
 /* Header Section */
 
-.navbar, .banner{
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
     align-items: center;
@@ -48,40 +60,113 @@
 
 /* Navbar Section  */
 
-.navbar{
-  justify-content: space-between;
+.navbar {
+    justify-content: space-between;
 }
-ul li{
+
+ul li {
     list-style: none;
     margin-right: 2rem;
 }
-ul a{
+
+ul a {
     text-decoration: none;
 }
-.navbar-teitle{
+
+.navbar-teitle {
     font-size: 45px;
     font-weight: bold;
 }
+
 /* Banner Section */
 
-.text-content{
+.text-content {
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.banner-teitel{
+
+.banner-teitel {
     font-size: 4rem;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
 }
 
+/* Teames Section */
+.team {
+    align-items: center;
+}
+
+.teme-discations {
+    margin-left: 130px;
+    max-width: 564px;
+}
+
+.teames-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features-teitel {
+    font-size: 3rem;
+}
+
+.itm-1 {
+    color: #727272;
+}
+
+.itm-2 {
+    color: #131313;
+}
+
+.itm-3 {
+    color: #FF900E;
+}
+
+.features-diception {
+    font-size: 1rem;
+    color: #727272;
+}
+
+
 /* Responcive Quiery */
 @media screen and (max-width:576px) {
-    .navbar, .list-item{
+
+    .navbar,
+    .list-item {
         flex-direction: column;
         gap: 10px;
     }
-    
+
+    .team {
+        flex-direction: column;
+    }
+
+    .teames-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .teames-img img {
+        width: 100%;
+    }
+
+    .teme-discations {
+        margin-left: 25px;
+    }
+}
+
+/* Mideam Teblet */
+@media screen and (min-width:576px) 
+and (max-width:992px) {
+    .teme-discations {
+        margin-left: 22px;
+        max-width: 650px;
+    }
+    .team {
+        flex-direction: column;
+    }
 }
