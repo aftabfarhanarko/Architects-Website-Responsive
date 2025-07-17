@@ -281,8 +281,7 @@ ul a {
 /* Responcive Quiery */
 @media screen and (max-width:576px) {
 
-    .navbar,
-    .list-item {
+    .navbar {
         flex-direction: column;
         gap: 10px;
     }
@@ -375,7 +374,7 @@ ul a {
     }
 
     .footer-clear {
-        width: 100%;
+        width: 95%;
     }
 
     #img-btn {
