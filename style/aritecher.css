@@ -10,7 +10,7 @@
 
 /* Share Style All ELement */
 
-main>section {
+main > section {
     margin-top: 130px;
 }
 
@@ -138,6 +138,7 @@ ul a {
 .some-fact{
     max-width: 1440px;
     margin: 0 auto;
+     margin-top: 130px;
 }
 .list-item-in-section{
     display: grid;
@@ -151,16 +152,17 @@ ul a {
     justify-content: center;
    align-items: center;
    text-align: center;
-
 }
 .titel-fact{
+    margin-bottom: 10px;
     font-size: 3rem;
     color: #131313;
 }
 .fact-dicption{
     font-size: 17px;
     max-width: 540px;
-    margin-bottom: 70px;
+    margin: 0;
+    margin-bottom: 50px;
     color: #727272;
 }
 .number{
@@ -177,10 +179,33 @@ ul a {
     font-weight: 500;
 }
 
+/* Cpmpany Sponcer */
+.company{
 
+}
+.company-titel{
+    max-width: 540px;
+    margin: 40px auto;
+    text-align: center;
 
+}
+.titel{
+    font-size: 2.56rem;
+    color: #131313;
+    margin-top: 10px;
 
-
+}
+.company-dicption{
+   font-size: 1rem;
+   color: #727272;
+}
+.company-logo{
+    display:grid ;
+    grid-template-columns: repeat(5, 1fr);
+}
+.company-logo img{
+    filter: grayscale(100%);
+}
 
 /* Responcive Quiery */
 @media screen and (max-width:576px) {
@@ -210,9 +235,15 @@ ul a {
         grid-template-columns: repeat(1,1fr);
         gap: 20px;
     }
-    .some-fact{
-        margin-left: 25px;
+    .list-item-in-section{
+        justify-items: center;
     }
+    .company-logo{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 45px;
+    justify-items: center;
+}
+    
 }
 
 /* Mideam Teblet */
@@ -228,8 +259,14 @@ and (max-width:992px) {
      .list-item-in-section{
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
+        justify-items: center;
     }
      .some-fact{
         margin-left: 30px;
     }
+     .company-logo{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 40px;
+   }
 }
