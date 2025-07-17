@@ -36,7 +36,7 @@ main > section {
 
 .primary-btn {
     font-size: 18px;
-    padding: 17px 25px;
+    padding: 25px 25px;
     color: white;
     background-color: #FF900E;
     border: none;
@@ -155,7 +155,7 @@ ul a {
 }
 .titel-fact{
     margin-bottom: 10px;
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #131313;
 }
 .fact-dicption{
@@ -180,9 +180,7 @@ ul a {
 }
 
 /* Cpmpany Sponcer */
-.company{
 
-}
 .company-titel{
     max-width: 540px;
     margin: 40px auto;
@@ -190,7 +188,7 @@ ul a {
 
 }
 .titel{
-    font-size: 2.56rem;
+    font-size: 2.7rem;
     color: #131313;
     margin-top: 10px;
 
@@ -207,6 +205,46 @@ ul a {
     filter: grayscale(100%);
 }
 
+/* Fetuchers Section */
+.fetures{
+    display: flex;
+    gap: 120px;
+}
+.fetures-teitle{
+    font-size: 2.7rem;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.pragraph{
+   color: #727272;
+}
+.card-fetures{
+    padding: 25px 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+   margin-bottom: 20px;
+   border-radius: 8px;
+
+}   
+.card-teitle{
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.fetures-img img{
+    width: 100%;
+}
+#img-btn{
+   margin-left: -100px;
+   margin-top: -100px;
+}
+#year-text{
+  font-size: 4rem;
+  font-weight: bold;
+}
+#expline-text{
+  font-size: 1.5rem;
+}
 /* Responcive Quiery */
 @media screen and (max-width:576px) {
 
@@ -242,6 +280,21 @@ ul a {
     grid-template-columns: repeat(1, 1fr);
     gap: 45px;
     justify-items: center;
+    }
+    .fetures{
+        flex-direction: column;
+    }
+
+    #img-btn{
+   margin-left: 10px;
+   margin-top: 10px;
+}
+#year-text{
+  font-size: 2rem;
+  font-weight: 600;
+}
+#expline-text{
+  font-size: 1rem;
 }
     
 }
@@ -269,4 +322,19 @@ and (max-width:992px) {
     justify-items: center;
     gap: 40px;
    }
+   .fetures{
+    flex-direction:column-reverse ;
+    gap: 120px;
+}
+  #img-btn{
+   margin-left: 10px;
+   margin-top: 10px;
+}
+#year-text{
+  font-size: 2.57rem;
+  font-weight: 600;
+}
+#expline-text{
+  font-size: 1.34rem;
+}
 }
