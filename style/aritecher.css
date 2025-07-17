@@ -10,7 +10,7 @@
 
 /* Share Style All ELement */
 
-main > section {
+main>section {
     margin-top: 130px;
 }
 
@@ -135,44 +135,51 @@ ul a {
 
 /* Fact */
 
-.some-fact{
+.some-fact {
     max-width: 1440px;
     margin: 0 auto;
-     margin-top: 130px;
+    margin-top: 130px;
 }
-.list-item-in-section{
+
+.list-item-in-section {
     display: grid;
-    grid-template-columns: repeat(4,1fr);}
-.item-fact{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.item-fact {
     display: flex;
     border: 1px solid #FF900E;
     border-radius: 8px;
     width: 240px;
     height: 180px;
     justify-content: center;
-   align-items: center;
-   text-align: center;
+    align-items: center;
+    text-align: center;
 }
-.titel-fact{
+
+.titel-fact {
     margin-bottom: 10px;
     font-size: 2.7rem;
     color: #131313;
 }
-.fact-dicption{
+
+.fact-dicption {
     font-size: 17px;
     max-width: 540px;
     margin: 0;
     margin-bottom: 50px;
     color: #727272;
 }
-.number{
+
+.number {
     font-size: 2.3rem;
     margin-top: 7px;
     margin-bottom: 10px;
     color: #383838;
     font-weight: 600;
 }
-.name{
+
+.name {
     font-size: 1.25rem;
     color: #727272;
     margin: 0;
@@ -181,79 +188,92 @@ ul a {
 
 /* Cpmpany Sponcer */
 
-.company-titel{
+.company-titel {
     max-width: 540px;
     margin: 40px auto;
     text-align: center;
 
 }
-.titel{
+
+.titel {
     font-size: 2.7rem;
     color: #131313;
     margin-top: 10px;
 
 }
-.company-dicption{
-   font-size: 1rem;
-   color: #727272;
+
+.company-dicption {
+    font-size: 1rem;
+    color: #727272;
 }
-.company-logo{
-    display:grid ;
+
+.company-logo {
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
-.company-logo img{
+
+.company-logo img {
     filter: grayscale(100%);
 }
 
 /* Fetuchers Section */
-.fetures{
+.fetures {
     display: flex;
     gap: 120px;
 }
-.fetures-teitle{
+
+.fetures-teitle {
     font-size: 2.7rem;
     border-left: 5px solid #FF900E;
     padding-left: 20px;
     font-weight: bold;
 }
-.pragraph{
-   color: #727272;
+
+.pragraph {
+    color: #727272;
 }
-.card-fetures{
+
+.card-fetures {
     padding: 25px 30px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
-   margin-bottom: 20px;
-   border-radius: 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 
-}   
-.card-teitle{
+}
+
+.card-teitle {
     margin: 0;
     font-size: 1.4rem;
     font-weight: 600;
 }
-.fetures-img img{
+
+.fetures-img img {
     width: 100%;
 }
-#img-btn{
-   margin-left: -100px;
-   margin-top: -100px;
+
+#img-btn {
+    margin-left: -100px;
+    margin-top: -100px;
 }
-#year-text{
-  font-size: 4rem;
-  font-weight: bold;
+
+#year-text {
+    font-size: 4rem;
+    font-weight: bold;
 }
-#expline-text{
-  font-size: 1.5rem;
+
+#expline-text {
+    font-size: 1.5rem;
 }
 
 /* Footer Section */
-.footer-clear{
+.footer-clear {
     margin-top: 100px;
     text-align: center;
     background-color: #FFF4E7;
-    padding: 26px 20px ;
+    padding: 26px 20px;
 }
-.text-futter{
+
+.text-futter {
     font-size: 1.5rem;
     color: #727272;
 }
@@ -282,79 +302,93 @@ ul a {
     .teme-discations {
         margin-left: 25px;
     }
-    .list-item-in-section{
-        grid-template-columns: repeat(1,1fr);
+
+    .list-item-in-section {
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
-    .list-item-in-section{
+
+    .list-item-in-section {
         justify-items: center;
     }
-    .company-logo{
-    grid-template-columns: repeat(1, 1fr);
-    gap: 45px;
-    justify-items: center;
+
+    .company-logo {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 45px;
+        justify-items: center;
     }
-    .fetures{
+
+    .fetures {
         flex-direction: column;
     }
 
-    #img-btn{
-   margin-left: 10px;
-   margin-top: 10px;
-}
-#year-text{
-  font-size: 2rem;
-  font-weight: 600;
-}
-#expline-text{
-  font-size: 1rem;
-}
-.text-futter{
-    max-width: 1440px;
+    #img-btn {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
 
-}   
+    #year-text {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    #expline-text {
+        font-size: 1rem;
+    }
+
+    .text-futter {
+        max-width: 1440px;
+
+    }
 }
 
 /* Mideam Teblet */
-@media screen and (min-width:576px) 
-and (max-width:992px) {
+@media screen and (min-width:576px) and (max-width:992px) {
     .teme-discations {
         margin-left: 22px;
         max-width: 650px;
     }
+
     .team {
         flex-direction: column;
     }
-     .list-item-in-section{
-        grid-template-columns: repeat(2,1fr);
+
+    .list-item-in-section {
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         justify-items: center;
     }
-     .some-fact{
+
+    .some-fact {
         margin-left: 30px;
     }
-     .company-logo{
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 40px;
-   }
-   .fetures{
-    flex-direction:column-reverse ;
-    gap: 120px;
-}
-.footer-clear{
-     width: 100%;
-}
-  
-  #img-btn{
-   margin-left: 10px;
-   margin-top: 10px;
-}
-#year-text{
-  font-size: 2.57rem;
-  font-weight: 600;
-}
-#expline-text{
-  font-size: 1.34rem;
-}
+
+    .company-logo {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 40px;
+    }
+
+    .fetures {
+        flex-direction: column-reverse;
+        gap: 120px;
+    }
+
+    .footer-clear {
+        width: 100%;
+    }
+
+    #img-btn {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    #year-text {
+        font-size: 2.57rem;
+        font-weight: 600;
+    }
+
+    #expline-text {
+        font-size: 1.34rem;
+    }
 }
