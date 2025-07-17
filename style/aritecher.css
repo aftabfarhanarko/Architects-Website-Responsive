@@ -245,6 +245,19 @@ ul a {
 #expline-text{
   font-size: 1.5rem;
 }
+
+/* Footer Section */
+.footer-clear{
+    margin-top: 100px;
+    text-align: center;
+    background-color: #FFF4E7;
+    padding: 26px 20px ;
+}
+.text-futter{
+    font-size: 1.5rem;
+    color: #727272;
+}
+
 /* Responcive Quiery */
 @media screen and (max-width:576px) {
 
@@ -296,7 +309,10 @@ ul a {
 #expline-text{
   font-size: 1rem;
 }
-    
+.text-futter{
+    max-width: 1440px;
+
+}   
 }
 
 /* Mideam Teblet */
@@ -326,6 +342,10 @@ and (max-width:992px) {
     flex-direction:column-reverse ;
     gap: 120px;
 }
+.footer-clear{
+     width: 100%;
+}
+  
   #img-btn{
    margin-left: 10px;
    margin-top: 10px;
