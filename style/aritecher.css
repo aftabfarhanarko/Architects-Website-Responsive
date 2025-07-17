@@ -98,6 +98,7 @@ ul a {
 /* Teames Section */
 .team {
     align-items: center;
+    padding: 15px;
 }
 
 .teme-discations {
@@ -132,6 +133,54 @@ ul a {
     color: #727272;
 }
 
+/* Fact */
+
+.some-fact{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.list-item-in-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);}
+.item-fact{
+    display: flex;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 240px;
+    height: 180px;
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+
+}
+.titel-fact{
+    font-size: 3rem;
+    color: #131313;
+}
+.fact-dicption{
+    font-size: 17px;
+    max-width: 540px;
+    margin-bottom: 70px;
+    color: #727272;
+}
+.number{
+    font-size: 2.3rem;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    color: #383838;
+    font-weight: 600;
+}
+.name{
+    font-size: 1.25rem;
+    color: #727272;
+    margin: 0;
+    font-weight: 500;
+}
+
+
+
+
+
 
 /* Responcive Quiery */
 @media screen and (max-width:576px) {
@@ -157,6 +206,13 @@ ul a {
     .teme-discations {
         margin-left: 25px;
     }
+    .list-item-in-section{
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .some-fact{
+        margin-left: 25px;
+    }
 }
 
 /* Mideam Teblet */
@@ -168,5 +224,12 @@ and (max-width:992px) {
     }
     .team {
         flex-direction: column;
+    }
+     .list-item-in-section{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+     .some-fact{
+        margin-left: 30px;
     }
 }
